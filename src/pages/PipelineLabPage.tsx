@@ -166,7 +166,7 @@ export default function PipelineLabPage() {
         {/* ── Main content ── */}
         <section className="flex-1 px-6 md:px-12 py-10 md:py-12 md:mt-0 mt-10 overflow-y-auto">
           {currentScreen === 0 && (
-            <EntryScreen onNext={() => goTo(1)} />
+            <EntryScreen onNext={() => goTo(1)} onBranchB={() => goTo(5)} />
           )}
           {currentScreen === 1 && (
             <StudioProfile
