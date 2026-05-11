@@ -95,7 +95,7 @@ const HeroSection = () => {
               </p>
 
               <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-3xl">
-                Test &amp; Validate your ideas into game engines, animation pipelines, and VFX workflows.
+                Test &amp; Validate your DCC ideas into game engines, 3D animation pipelines and workflows
               </p>
 
               <p className="text-base md:text-lg text-gray-300 leading-relaxed max-w-3xl">
