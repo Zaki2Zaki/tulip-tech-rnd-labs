@@ -6,6 +6,7 @@ import RiskScan from "@/components/BranchC/RiskScan";
 import type { BudgetBreakdown } from "@/components/BranchC/RiskScan";
 import ROIModel from "@/components/BranchC/ROIModel";
 import ExecutiveSummary from "@/components/BranchC/ExecutiveSummary";
+import PipelineDiagnosisPage from "@/components/BranchB/PipelineDiagnosisPage";
 
 // Screen 0 = Entry, 1 = StudioProfile, 2 = RiskScan, 3 = ROIModel, 4 = ExecutiveSummary
 const SIDEBAR_ITEMS = [
