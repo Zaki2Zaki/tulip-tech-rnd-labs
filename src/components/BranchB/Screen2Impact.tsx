@@ -117,27 +117,26 @@ export default function Screen2Impact({ onNext, onBack }: Props) {
         </div>
       </div>
 
+      {/* Currency toggle — between Q1 and Q2 */}
+      <div style={{ display: 'flex', justifyContent: 'center', gap: '4px', marginBottom: '28px', marginTop: '-16px' }}>
+        {(['CAD', 'USD', 'EUR'] as const).map(c => (
+          <button key={c} onClick={() => update({ currency: c })}
+            style={{
+              padding: '5px 14px', borderRadius: '99px', fontSize: '11px', fontWeight: 600, cursor: 'pointer',
+              border: currency === c ? '0.5px solid rgba(167,139,250,0.55)' : '0.5px solid rgba(255,255,255,0.12)',
+              background: currency === c ? 'rgba(167,139,250,0.10)' : 'transparent',
+              color: currency === c ? '#c4b5fd' : 'rgba(255,255,255,0.5)',
+            }}>
+            {c}
+          </button>
+        ))}
+      </div>
+
       {/* Q2 — Revision rounds + slider */}
       <div style={{ marginBottom: '28px', padding: '20px', borderRadius: '12px', border: '0.5px solid rgba(255,255,255,0.1)', background: 'rgba(255,255,255,0.02)' }}>
-        {/* Currency toggle */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '4px' }}>
-          <p style={{ fontSize: '13px', fontWeight: 600, color: '#fff', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
-            Q2 — Revision rounds
-          </p>
-          <div style={{ display: 'flex', gap: '4px' }}>
-            {(['CAD', 'USD', 'EUR'] as const).map(c => (
-              <button key={c} onClick={() => update({ currency: c })}
-                style={{
-                  padding: '4px 10px', borderRadius: '99px', fontSize: '11px', fontWeight: 600, cursor: 'pointer',
-                  border: currency === c ? '0.5px solid rgba(167,139,250,0.55)' : '0.5px solid rgba(255,255,255,0.12)',
-                  background: currency === c ? 'rgba(167,139,250,0.10)' : 'transparent',
-                  color: currency === c ? '#c4b5fd' : 'rgba(255,255,255,0.5)',
-                }}>
-                {c}
-              </button>
-            ))}
-          </div>
-        </div>
+        <p style={{ fontSize: '13px', fontWeight: 600, color: '#fff', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+          Q2 — Revision rounds
+        </p>
         <p style={{ fontSize: '14px', color: '#fff', marginBottom: '4px' }}>
           How many revision rounds does a typical asset go through before sign-off?
         </p>
