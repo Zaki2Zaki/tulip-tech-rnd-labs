@@ -43,35 +43,17 @@ const CARD_BODY: React.CSSProperties = {
 };
 
 export default function EntryScreen({ onNext, onBranchB }: EntryScreenProps) {
-  const navigate = useNavigate();
-  const [selected, setSelected] = useState<"a" | "b" | "c">("c");
-  const [showEmailCapture, setShowEmailCapture] = useState(false);
-  const [email, setEmail] = useState("");
-  const [notified, setNotified] = useState(false);
+  const [selected, setSelected] = useState<"a" | "c">("c");
 
   const handleCTA = () => {
     if (selected === "c") {
       onNext();
     } else if (selected === "a") {
       window.location.href = "/#interactive-demo";
-    } else if (selected === "b") {
-      navigate("/pipeline-diagnosis");
     }
   };
 
-  const handleSubmitEmail = () => {
-    if (!email.trim()) return;
-    setNotified(true);
-    setShowEmailCapture(false);
-    setEmail("");
-  };
-
-  const ctaLabel =
-    selected === "c"
-      ? "Start Briefing"
-      : selected === "a"
-      ? "Start Building"
-      : "Start Diagnosis";
+  const ctaLabel = selected === "c" ? "Start Briefing" : "Start Building";
 
   const radioStyle = (isActive: boolean): React.CSSProperties => ({
     width: "17px",
