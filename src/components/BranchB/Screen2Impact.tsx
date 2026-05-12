@@ -277,7 +277,7 @@ export default function Screen2Impact({ onNext, onBack }: Props) {
               <strong style={{ color: '#fff' }}>Hourly rate:</strong> $100,000 / 2,080 hrs = CA$48.08/hr<br />
               <strong style={{ color: '#fff' }}>Monthly hours:</strong> 160 hrs (4 weeks × 40 hrs)<br />
               <strong style={{ color: '#fff' }}>Risk adjustment:</strong> × 0.70 (Forrester TEI — 30% discount for adoption risk)<br /><br />
-              <strong style={{ color: '#fff' }}>Formula (Q2 — cost metrics):</strong><br />
+              <strong style={{ color: '#fff' }}>Formula (Q2. cost metrics):</strong><br />
               Hours lost = teamMidpoint × 160 × (reworkPct / 100)<br />
               Gross monthly = hours × $48.08<br />
               Adj monthly = gross × 0.70<br />
