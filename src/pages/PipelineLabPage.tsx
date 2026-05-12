@@ -207,7 +207,6 @@ export default function PipelineLabPage() {
           )}
         </section>
       </div>
-      )}
     </main>
   );
 }
