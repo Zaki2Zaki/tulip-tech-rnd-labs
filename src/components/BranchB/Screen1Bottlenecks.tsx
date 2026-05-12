@@ -118,7 +118,7 @@ export default function Screen1Bottlenecks({ onNext }: Props) {
         </div>
       </div>
 
-      {/* Q3 — Bottleneck stages */}
+      {/* Q3. Bottleneck stages */}
       <div style={{ marginBottom: '32px' }}>
         <p style={{ fontSize: '13px', fontWeight: 600, color: '#fff', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
           Which stages are running over schedule most often?
