@@ -51,7 +51,7 @@ export default function Screen1Bottlenecks({ onNext }: Props) {
         Where is your production losing the most time?
       </h2>
 
-      {/* Q1 — Output type */}
+      {/* Q1. Output type */}
       <div style={{ marginBottom: '28px' }}>
         <p style={{ fontSize: '13px', fontWeight: 600, color: '#fff', marginBottom: '10px', textTransform: 'uppercase', letterSpacing: '0.08em' }}>
           What is your primary production output?
