@@ -53,13 +53,6 @@ export default function PipelineLabPage() {
     <main className="min-h-screen bg-background">
       <Navbar />
 
-      {currentScreen === 5 && (
-        <div className="pt-20">
-          <PipelineDiagnosisPage onBack={() => goTo(0)} />
-        </div>
-      )}
-
-      {currentScreen !== 5 && (
       <div className="pt-20 flex min-h-[calc(100vh-80px)]">
         {/* ── Sidebar ── */}
         <aside className="hidden md:flex flex-col w-56 shrink-0 border-r border-border/30 bg-card/30 px-5 py-10">
