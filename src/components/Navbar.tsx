@@ -129,7 +129,7 @@ const Navbar = () => {
           {/* Logo + text-scale button */}
           <div className="flex items-center gap-3">
             <Link to="/" className="font-display text-2xl font-bold tracking-tight text-foreground shrink-0">
-              TULIP<span className="text-gradient-gold"> TECH</span>
+              TULIP<span className="text-gradient-gold"> TECH R&D</span>
             </Link>
 
             {/* ── Text Scale Button ─────────────────────────── */}
